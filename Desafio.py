@@ -100,10 +100,8 @@ while  not saida:
                         print ()
                         print ('ERRO! POLTRONA NÃO RESERVADA OU NÃO EXISTENTE')
                 else:
-                        print ()
                         print ('CLIENTE: %s' %populacao [fileira -1] [poltrona] [0])
                         print ('ESTUDANTE: %s' %populacao [fileira -1] [poltrona] [1])
-                        print ()
                         input ('PRESSIONE QUALQUER TECLA PARA VOLTAR... ')
                         print ()
 
