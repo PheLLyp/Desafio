@@ -3,7 +3,6 @@
 
 #Variaveis para o usuário definir quantas colunas e quantos assento possui enfileirados
 quantidade_fileira = 10
-
 quantidade_poltrona = 'J'# Valor da quantidade_fileira tem de ser menor ou igual a 25 para que esteja entre o alfabeto maiusculo
 
 quantidade_poltronafmt = quantidade_poltrona #Variavel usada para apresentar ao usuário quando pedir valores da poltrona
@@ -53,7 +52,7 @@ while  not saida:
                 print ('       MAPA DA SALA')
                 poltronaFmt = ('     ')
                 #Imprimir as letras que representam as poutronas
-                for c in range (quantidade_fileira):
+                for c in range (quantidade_poltrona):
                     poltronaFmt += chr(ord('A') + c) + ' '
                 print (poltronaFmt)
 
@@ -78,7 +77,7 @@ while  not saida:
                     valor_burro = str (i + 1)
                     mataburro.append (valor_burro)
 
-                fileira = input ('Digite o número de uma FILEIRA (1 - %d): '%quantidade_fileira)
+                fileira = input ('FILEIRA (1 - %d): '%quantidade_fileira)
 
                 while fileira not in mataburro:
                     fileira = input ('ENTRADA INCORRETA!!!Digite o número de uma FILEIRA (1 - %d): '%quantidade_fileira)
@@ -87,7 +86,7 @@ while  not saida:
 
 
 
-                poltrona = input ('Digite a letra de uma POLTRONA (A - %s): '%quantidade_poltronafmt)
+                poltrona = input ('POLTRONA (A - %s): '%quantidade_poltronafmt)
 
                 # Verificação para entrada de dados corretos.Caso usuário entre com outro dados a não ser letras maiúsculas
                 while ord (poltrona) < ord ('A') or ord(poltrona) > ord ('Z'):
@@ -116,7 +115,7 @@ while  not saida:
                     valor_burro = str (i + 1)
                     mataburro.append (valor_burro)
 
-                fileira = input ('Digite o número de uma FILEIRA (1 - %d): '%quantidade_fileira)
+                fileira = input ('FILEIRA (1 - %d): '%quantidade_fileira)
 
                 while fileira not in mataburro:
                     fileira = input ('ENTRADA INCORRETA!!!Digite o número de uma FILEIRA (1 - %d): '%quantidade_fileira)
@@ -125,7 +124,7 @@ while  not saida:
 
 
 
-                poltrona = input ('Digite a letra de uma POLTRONA (A - %s): '%quantidade_poltronafmt)
+                poltrona = input ('POLTRONA (A - %s): '%quantidade_poltronafmt)
 
                 # Verificação para entrada de dados corretos.Caso usuário entre com outro dados a não ser letras maiúsculas
                 while ord (poltrona) < ord ('A') or ord(poltrona) > ord ('Z'):
@@ -139,8 +138,10 @@ while  not saida:
                         #Verifica se a poltrona existe ou se já esta reservada
                         print ('ERRO! POLTRONA NÃO EXISTENTE OU JÁ RESERVADA')
                 else:
+                        print ()
                         cliente = input ('CLIENTE: ')
                         estudante = input ('ESTUDANTE (S/N): ')
+                        print ()
                         if estudante == 's' or estudante == 'S':
                                 estudante = 'SIM'
                         elif estudante == 'n' or estudante == 'N':
@@ -160,7 +161,7 @@ while  not saida:
                     valor_burro = str (i + 1)
                     mataburro.append (valor_burro)
 
-                fileira = input ('Digite o número de uma FILEIRA (1 - %d): '%quantidade_fileira)
+                fileira = input ('FILEIRA (1 - %d): '%quantidade_fileira)
 
                 while fileira not in mataburro:
                     fileira = input ('ENTRADA INCORRETA!!!Digite o número de uma FILEIRA (1 - %d): '%quantidade_fileira)
@@ -169,7 +170,7 @@ while  not saida:
 
 
 
-                poltrona = input ('Digite a letra de uma POLTRONA (A - %s): '%quantidade_poltronafmt)
+                poltrona = input ('POLTRONA (A - %s): '%quantidade_poltronafmt)
 
                 # Verificação para entrada de dados corretos.Caso usuário entre com outro dados a não ser letras maiúsculas
                 while ord (poltrona) < ord ('A') or ord(poltrona) > ord ('Z'):
