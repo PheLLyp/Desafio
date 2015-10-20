@@ -136,7 +136,6 @@ while  not saida:
                         #Verifica se a poltrona existe ou se já esta reservada
                         print ('ERRO! POLTRONA NÃO EXISTENTE OU JÁ RESERVADA')
                 else:
-                        print ()
                         cliente = input ('CLIENTE: ')
                         estudante = input ('ESTUDANTE (S/N): ')
                         print ()
